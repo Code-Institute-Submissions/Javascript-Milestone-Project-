@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    font-family: "Gloria Hallelujah";
+    background-color: lawngreen;
+}
+
+.restart-button {
+    background-color: red;
+    padding: 0.7em 1.4em;
+    border-radius: 0.3em;
+    border: 1px solid #6D4C41;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+ 
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 0.6em;
+}
+ 
+.game-details {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3em;
+    text-align: center;
+}
+.move-counter,
+.timer,
+.restart-btn {
+    width: 100%;
+}
+.move-counter, .timer {
+    font-size: 1.2em;
+}
+ 
+.restart-btn {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+.game-board {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:yellow;
+    border-radius: 0.4em;
+    box-shadow: 0 5px 5px #808080;
+}
+.game-table-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.game-card {
+    width: 4.6em;
+    height: 4.6em;
+    background-color:red;
+    border-radius: 0.4em;
+    margin: 0.8em;
+    box-shadow: 2px 0 10px #212121;
+}
+.game-card-img {
+    visibility: hidden;
+    object-fit: cover;
+    width: 4.5em;
+    height: 4.5em;
+}
+.restart-button-div {
+    max-width: 50%;
+    margin: 1.4em auto;
+    text-align: center;
+}
+

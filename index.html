@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flip or Flop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Flip or Flop!!</h1>
+        <h1>Flip Or Flop</h1>
     </header>
     <main>
         <section>
@@ -15,10 +17,10 @@
                 <span class="move-counter" id="moveCounter"></span>
                 <span class="timer" id="timer">0 mins 0 secs</span>
             </div>
-            <table class="game">
+            <table class="game-board">
                 <tbody class="game-table">
                     <tr class="game-table-row">
-                          <td class="game-card">
+                        <td class="game-card">
                             <img class="game-card-img" src="assets/images/1.png" alt="face1">
                         </td>
                         <td class="game-card">
@@ -73,13 +75,13 @@
                             <img class="game-card-img" src="assets/images/8.png" alt="face8">
                         </td>
                     </tr>
-                </tbody>     
+                </tbody>               
             </table>
             <div class="restart-button-div">
                 <button class="restart-button" id="restartButton">Restart</button>
-            </div>  
-
+            </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
