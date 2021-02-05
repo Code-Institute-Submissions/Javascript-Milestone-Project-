@@ -69,7 +69,9 @@ Media - I found my images used for the card faces on https://pixabay.com/illustr
 I received inspiration for my game on https://www.youtube.com/watch?v=3uuQ3g92oPQ.
 I also used the game design found here https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-1-shuffing-cards for help with the shuffling function.
 Wikipedia was also used for further information on the Fisher-Yates shuffle https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+I used further learning resources 
+1. https://www.ci-resources.online/js.html
+2. https://www.udemy.com/course/the-complete-javascript-course/
+3. https://www.codecademy.com/learn/introduction-to-javascript
 
-
-
-Also I thank my mentor for helping me and providing the guidance I needed. 
+Also I thank my mentor for helping me and providing the guidance I needed during our Milestone meetings
