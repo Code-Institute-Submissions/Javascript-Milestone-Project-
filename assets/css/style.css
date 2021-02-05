@@ -1,3 +1,4 @@
+/*Fonts used*/
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 * {
@@ -12,16 +13,7 @@ body {
     font-family: "Gloria Hallelujah";
     background-color: lawngreen;
 }
-
-.restart-button {
-    background-color: red;
-    padding: 0.7em 1.4em;
-    border-radius: 0.3em;
-    border: 1px solid #6D4C41;
-    font-size: 1.2em;
-    font-weight: bold;
-}
- 
+/* Title and Game Details */
 h1 {
     text-align: center;
     font-size: 2em;
@@ -45,14 +37,8 @@ h1 {
 .move-counter, .timer {
     font-size: 1.2em;
 }
- 
-.restart-btn {
-    background: none;
-    border: none;
-    color: #000000;
-    font-size: 1.6em;
-    font-weight: 900;
-}
+
+/* Game Board */
 .game-board {
     max-width: 50%;
     margin-left: auto;
@@ -79,9 +65,22 @@ h1 {
     width: 4.5em;
     height: 4.5em;
 }
+
+/* Restart Button */
+
 .restart-button-div {
     max-width: 50%;
     margin: 1.4em auto;
     text-align: center;
 }
 
+.restart-button {
+    background-color: red;
+    padding: 0.7em 1.4em;
+    border-radius: 0.3em;
+    border: 1px solid #6D4C41;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ 
