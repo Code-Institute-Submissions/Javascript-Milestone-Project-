@@ -1,45 +1,75 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+ <h1>Milestone Project</h1>
 
-Welcome Dwain-Daniel,
+This project will be used to display all that I have learned so far. I will be using this project to build a memory game. The idea is to flip the cards
+to find matching pairs of images. 
+Going forward I would like to include different difficulty options such as increased number of cards or a time limit.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+<h3>UX</h3>
 
-## Gitpod Reminders
+I want my site to be quite minimalistic and simple whilst remaining effective. I have used bright colours and an attractive font to show the fun nature of the game.
+The game is quite self explanatory, with only one clickable button outside of the game board. This is the reset button, this initialises the reshuffling of cards and the game begins again. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<h3>Features</h3>
 
-`python3 -m http.server`
+The user will see a running total of the amount of moves made with each click. The timer will also start from the second click on the screen. 
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+<h3>Features left to implement</h3>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+I would like to add a number of features going forward such as: <br>
+<li>Increased difficulty levels</li>
+<li>Customisable colour schemes</li>
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+<h3> Technologies Used </h3>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+I have built my site using: 
 
-## Updates Since The Instructional Video
+<h3>CSS</h3>
+https://en.wikipedia.org/wiki/CSS 
+CSS allows me to edit and decorate my site in the way I see fit. It gives me the ability to edit my HTML and create classes.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<h3>HTML</h3> 
+https://en.wikipedia.org/wiki/HTML 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<h3>JavaScript</h3> 
+https://www.javascript.com/
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<h3>Balsamiq</h3> 
+https://balsamiq.com/# 
+I used Balsamiq to help create my template and try design a quality game. <img src="assets/balsamiq/balsamiq.pdf">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<h3>Google Fonts</h3> 
+https://fonts.google.com/
+Google fonts were used to import the 'Gloria Hallelujah' font into the style.css file which is used on all pages throughout the project.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<h3>Testing</h3> 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+I have tested my site thoroughly, all the links are working and take the user to the correct pages. 
+The webpage will respond when used on smaller devices, the nav bar will shrink down into a drop down menu. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+I placed my site throught a CSS Validator which returned no errors  
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<h3>Deployment</h3>
 
---------
+I have used GitHub Pages to deploy the page using the following steps:
 
-Happy coding!
+<li>I logged in to GitHub and located the GitHub Repository Milestone Project 1</li>
+<li>I then clicked the Settings button on the menu.</li>
+<li>I scrolled down the Settings page to the "GitHub Pages" Section.</li>
+<li>Under "Source" I selected "Master Branch".</li>
+<li>The link was then published in the "GitHub Pages" section.</li>
+
+<h3>Credits</h3>
+
+Media - I found my images used for the card faces on https://pixabay.com/illustrations/smiley-faces-emoji-emoticons-5889752/
+
+<h3>Acknowledgements</h3> 
+
+I received inspiration for my game on https://www.youtube.com/watch?v=3uuQ3g92oPQ.
+I also used the game design found here https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-1-shuffing-cards for help with the shuffling function.
+Wikipedia was also used for further information on the Fisher-Yates shuffle https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+
+
+
+Also I thank my mentor for helping me and providing the guidance I needed. 
