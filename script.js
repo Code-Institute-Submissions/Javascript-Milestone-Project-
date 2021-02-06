@@ -86,3 +86,28 @@ function clickedCard(card) {
         }
     }
 }
+
+function matchingCards() {
+    flippedCards[0].classList.add("match");
+    flippedCards[1].classList.add("match");
+    flippedCards[0].classList.remove("show", "open");
+    flippedCards[1].classList.remove("show", "open");
+    matchedCards.push(flippedCards[0]);
+    matchedCards.push(flippedCards[1]);
+    flippedCards = [];
+    if(matchedCards.length == 16) {
+        endGame();
+    }
+}
+function nonMatchingCards() {
+    flippedCards[0].classList.add("unmatched");
+    flippedCards[1].classList.add("unmatched");
+    disableCard();
+    setTimeout(function() {
+        flippedCards[0].classList.remove("show", "open", "unmatched");
+        flippedCards[1].classList.remove("show", "open", "unmatched");
+        flippedCards[0].children[0].classList.remove('show-img');
+        flippedCards[1].children[0].classList.remove('show-img');
+        enableCard();
+        flippedCards = [];
+    }, 1100)}
