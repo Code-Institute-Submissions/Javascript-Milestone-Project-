@@ -110,4 +110,36 @@ function nonMatchingCards() {
         flippedCards[1].children[0].classList.remove('show-img');
         enableCard();
         flippedCards = [];
-    }, 1100)}
+    }, 1100)
+}
+
+function disableCard() {
+    cardsArray.filter((card, i, cardsArray) => {
+        card.classList.add('disabled');
+    })
+}
+function enableCard() {
+    cardsArray.filter((card, i, cardsArray) => {
+        card.classList.remove('disabled');
+        for(let i=0; i<matchedCards.length; i++) {
+            matchedCards[i].classList.add('disabled');
+        }
+    })
+}
+
+function startTimer() {
+    interval = setInterval(function(){
+        timer.innerHTML = minute + " mins " + second + " secs";
+        second++;
+        if(second == 60) {
+            minute++;
+            second = 0;
+        }
+        if(minute == 60) {
+            hour++;
+            minute = 0;
+        }
+    }, 1000)
+}
+
+ 
