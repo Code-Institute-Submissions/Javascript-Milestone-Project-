@@ -73,3 +73,16 @@ function displayCard() {
     this.classList.toggle("disabled");
     clickedCard(this);
 }
+
+function clickedCard(card) {
+    flippedCards.push(card);
+    let len = flippedCards.length;
+    if(len === 2) {
+        totalMoves();
+        if(flippedCards[0].type === flippedCards[1].type) {
+            matchingCards();
+        } else {
+            nonMatchingCards();
+        }
+    }
+}
