@@ -1,13 +1,44 @@
+ <img src=assets/images/display.png>
+
+My project can be found [here](https://dwain-daniel.github.io/Javascript-Milestone-Project-/)
+ 
  <h1>Milestone Project</h1>
 
-This project will be used to display all that I have learned so far. I will be using this project to build a memory game. The idea is to flip the cards
-to find matching pairs of images. 
-Going forward I would like to include different difficulty options such as increased number of cards or a time limit.
+This project will be used to display all that I have learned so far during the Full Stack Developer Course with Code Institute.  
+I will be using HTML, CSS and Javascript to build a memory game. The idea is to flip the cards
+to find matching pairs of images. It is designed to be responsive on a wide range of devices and is a clean and simple site to navigate around for users of all ages to enjoy
 
 <h3>UX</h3>
 
 I want my site to be quite minimalistic and simple whilst remaining effective. I have used bright colours and an attractive font to show the fun nature of the game.
 The game is quite self explanatory, with only one clickable button outside of the game board. This is the reset button, this initialises the reshuffling of cards and the game begins again. 
+
+### User Stories 
+
+As a site user:
+
+<li>I want a site that is easy to navigate through and to play a game that is fun and interactive</li>
+<li>To be able to change the level of the game (easy, medium hard)</li>
+<li>To be able to track my progress as I play with a running number of moves taken</li>
+<li>To be able to see my results post game and how long I took to complete it and how many moves it took to complete the game</li>
+<li>To easily be able to restart the game if I made too many mistakes or the time has reached too high a number</li>
+
+As the site developer I would like the site to include:
+
+<li>A timer for the user to see how long they are taking</li>
+<li>A move counter for the user to track the amount of moves taken so far</li>
+<li>An overlay to appear upon creation of the game giving the user feedback of the their game</li>
+
+# Design process
+
+<img src=assets/wireframes/mobile.png>
+<img src=assets/wireframes/tablet.JPG>
+<img src=assets/wireframes/website.png>
+
+The colours i have chosen are lawngreen, red and yellow. I have used these to make the page bright and attractive. The font I have used is 
+Gloria Hallelujah, again this is in keeping with the fun and bright design I wanted to achieve.
+
+
 
 <h3>Features</h3>
 

@@ -6,7 +6,7 @@ let hour = 0;
 let interval;
 let totalGameTime;
 let overlayElement = document.getElementById('gameOverOverlay');
-let totalMovesMade = document.getElementById('totalGameMoves');
+let totalMovesMade = document.getElementById('totalMoves');
 let totalTimeTaken = document.getElementById('totalGameTime');
 let closeOverlayIcon = document.getElementById('closeOverlay');
 let flippedCards = [];
