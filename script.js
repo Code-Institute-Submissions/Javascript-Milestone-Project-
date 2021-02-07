@@ -142,4 +142,35 @@ function startTimer() {
     }, 1000)
 }
 
+function totalMoves() {
+    moves++;
+    counter.innerHTML = moves + " move(s)";
+    if(moves == 1) {
+        second = 0;
+        minute = 0;
+        hour = 0;
+        startTimer();
+    }
+}
+
+function endGame() {
+    clearInterval(interval);
+    totalGameTime = timer.innerHTML;
+    overlayElement.classList.add("show-overlay");
+    totalTimeTaken.innerHTML = totalGameTime;
+    totalMovesMade.innerHTML = moves;
+    matchedCards = [];
+    closeOverlay();
+}
+ 
+function playAgain() {
+    overlayElement.classList.remove("show-overlay");
+    startGame();
+}
+
+window.onload = function () {
+    setTimeout(function() {
+        startGame()
+    }, 1200);}
+
  

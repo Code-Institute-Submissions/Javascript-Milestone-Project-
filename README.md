@@ -12,7 +12,9 @@ The game is quite self explanatory, with only one clickable button outside of th
 <h3>Features</h3>
 
 The user will see a running total of the amount of moves made with each click. The timer will also start from the second click on the screen. 
+over.
 
+Upon completion of the game an overlay will appear updating the user of the amount of moves used and time taken to complete the game.
 
 <h3>Features left to implement</h3>
 
@@ -45,9 +47,7 @@ Google fonts were used to import the 'Gloria Hallelujah' font into the style.css
 
 <h3>Testing</h3> 
 
-I have tested my site thoroughly, all the links are working and take the user to the correct pages. 
-The webpage will respond when used on smaller devices, the nav bar will shrink down into a drop down menu. 
-
+I have tested my site thoroughly, all the links are working and take the user to the correct pages.   
 I placed my site throught a CSS Validator which returned no errors  
 
 <h3>Deployment</h3>
