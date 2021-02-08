@@ -13,7 +13,7 @@ to find matching pairs of images. It is designed to be responsive on a wide rang
 I want my site to be quite minimalistic and simple whilst remaining effective. I have used bright colours and an attractive font to show the fun nature of the game.
 The game is quite self explanatory, with only one clickable button outside of the game board. This is the reset button, this initialises the reshuffling of cards and the game begins again. 
 
-### User Stories 
+<h3>User Stories</h3> 
 
 As a site user:
 
@@ -31,7 +31,7 @@ As the site developer I would like the site to include:
 <li>A move counter for the user to track the amount of moves taken so far</li>
 <li>An overlay to appear upon creation of the game giving the user feedback of the their game</li>
 
-# Design process
+<h3>Design Process</h3>
 
 <img src=assets/wireframes/mobile.png>
 <img src=assets/wireframes/tablet.JPG>
@@ -41,11 +41,12 @@ The colours i have chosen are lawngreen, red and yellow. I have used these to ma
 Gloria Hallelujah, again this is in keeping with the fun and bright design I wanted to achieve.
 
 
-
 <h3>Features</h3>
 
 Upon the page loading the user will see the page title 'Flip or Flop' in large letters at the top of the screen.
 below this a subtitle instructing the user to click a card to begin the game.
+
+The cards will flash briefly so the user can see where each card is before they are hidden from their sight again.
 
 Once the user has attempted their first match (initiated by clicking their second card) the timer will begin. 
 Also the timer will begin at the same time.
@@ -86,7 +87,7 @@ Google fonts were used to import the 'Gloria Hallelujah' font into the style.css
 [<h3>GitHub</h3>](https://github.com/)
 I have used Github as the hosting site for my code and GitPages to deploy my game.
 
-### Git
+<h3>Git</h3>
 Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
 
 [<h3>Techsini</h3>](http://techsini.com/multi-mockup/index.php)
@@ -98,7 +99,6 @@ I have used this to create a mock up of the site on different devices
 I have tested my code and my functionality of the page thoroughly
 
 [JS Hint](https://jshint.com/)
-
 The only issues that showed in the JShint report was the use of 'let' which is only available in ES6, this didnt causing any major concern. 
 There were a number missing semi-colons in the code which I later added.
 <img src=assets/testing/java.PNG>
@@ -107,7 +107,7 @@ There were a number missing semi-colons in the code which I later added.
 <img src=assets/testing/mobile-testing.PNG>
 
 [Lighthouse Report](https://developers.google.com/web/tools/lighthouse)
-<img src=assets/testing/lighthouse.PNG
+<img src=assets/testing/lighthouse.PNG>
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 <img src=assets/testing/css.PNG>
@@ -117,6 +117,10 @@ There were a number missing semi-colons in the code which I later added.
 
 My HTML received a warning for the lack of labelling on my 'section' section. Overall this was not a major issue.
 
+[Browserling](https://www.browserling.com/)
+<img src=assets/testing/browser.PNG>
+
+I have used Browserling as a tool to test my site was responsive across a variety of broswers
 
 <h3>Deployment</h3>
 
@@ -144,3 +148,6 @@ I used further learning resources to aid me with the skills required.
 3. https://www.codecademy.com/learn/introduction-to-javascript
 
 Also I thank my mentor Spencer Barriball for helping me and providing the guidance I needed during our Milestone Project meetings, his help has been invaluable.
+
+
+http://ami.responsivedesign.is/#

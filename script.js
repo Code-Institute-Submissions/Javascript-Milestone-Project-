@@ -71,7 +71,7 @@ function flashCards() {
         for(i=0; i<cards.length; i++) {
             cards[i].children[0].classList.remove("show-img");
         }
-    }, 500);
+    }, 1500);
 }
 
 // Display the cards
