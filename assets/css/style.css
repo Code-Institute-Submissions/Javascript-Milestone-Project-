@@ -14,10 +14,14 @@ body {
     background-color: lawngreen;
 }
 /* Title and Game Details */
-h1 {
+h1{
     text-align: center;
     font-size: 2em;
     padding: 0.6em;
+}
+
+h3{
+    text-align: center;
 }
  
 .game-details {

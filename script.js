@@ -1,4 +1,4 @@
-//  Defining variables for the main game
+//  Defining variables for the Flip or Flop
 let moves;
 let second = 0;
 let minute = 0;
@@ -8,7 +8,6 @@ let totalGameTime;
 let overlayElement = document.getElementById('gameOverOverlay');
 let totalMovesMade = document.getElementById('totalMoves');
 let totalTimeTaken = document.getElementById('totalGameTime');
-let closeOverlayIcon = document.getElementById('closeOverlay');
 let flippedCards = [];
 let matchedCards =  [];
 let cards = document.getElementsByClassName('game-card');
@@ -19,6 +18,8 @@ let counter = document.getElementById('moveCounter');
 let timer = document.getElementById('timer');
 
 // Functions
+
+// Shuffle Cards
 
 function shuffle(array) {
     let currentIndex = array.length,
@@ -34,6 +35,8 @@ function shuffle(array) {
     return array;
 }
 
+// Start Game
+
 function startGame() {
     let shuffledImages = shuffle(cardFaceArray);
     for(i=0; i<shuffledImages.length; i++) {
@@ -44,27 +47,34 @@ function startGame() {
         cards[i].children[0].classList.remove("show-img");
     }
 
+// Adding the event listener
+
 for(let i = 0; i < cardsArray.length; i++) {
-        cardsArray[i].addEventListener("click", displayCard)
+        cardsArray[i].addEventListener("click", displayCard);
     }
+
+
+// Flash the cards at the start of the game
 
     flashCards();
     moves = 0;
-    counter.innerText = `${moves} move(s)`;
+    counter.innerText = moves + " move(s)";
     timer.innerHTML = '0 mins 0 secs';
     clearInterval(interval);
 }
 
 function flashCards() {
     for(i=0; i<cards.length; i++) {
-        cards[i].children[0].classList.add("show-img")
+        cards[i].children[0].classList.add("show-img");
     }
     setTimeout(function(){
         for(i=0; i<cards.length; i++) {
-            cards[i].children[0].classList.remove("show-img")
+            cards[i].children[0].classList.remove("show-img");
         }
-    }, 1000)
+    }, 500);
 }
+
+// Display the cards
 
 function displayCard() {
     this.children[0].classList.toggle('show-img');
@@ -73,6 +83,8 @@ function displayCard() {
     this.classList.toggle("disabled");
     clickedCard(this);
 }
+
+// The card chosen by the user
 
 function clickedCard(card) {
     flippedCards.push(card);
@@ -87,6 +99,8 @@ function clickedCard(card) {
     }
 }
 
+// If the card matches the clicked card
+
 function matchingCards() {
     flippedCards[0].classList.add("match");
     flippedCards[1].classList.add("match");
@@ -99,6 +113,9 @@ function matchingCards() {
         endGame();
     }
 }
+
+// If the card  does not match the clicked card
+
 function nonMatchingCards() {
     flippedCards[0].classList.add("unmatched");
     flippedCards[1].classList.add("unmatched");
@@ -110,13 +127,13 @@ function nonMatchingCards() {
         flippedCards[1].children[0].classList.remove('show-img');
         enableCard();
         flippedCards = [];
-    }, 1100)
+    }, 1100);
 }
 
 function disableCard() {
     cardsArray.filter((card, i, cardsArray) => {
         card.classList.add('disabled');
-    })
+    });
 }
 function enableCard() {
     cardsArray.filter((card, i, cardsArray) => {
@@ -124,8 +141,10 @@ function enableCard() {
         for(let i=0; i<matchedCards.length; i++) {
             matchedCards[i].classList.add('disabled');
         }
-    })
+    });
 }
+
+// Starting the game timer
 
 function startTimer() {
     interval = setInterval(function(){
@@ -139,8 +158,10 @@ function startTimer() {
             hour++;
             minute = 0;
         }
-    }, 1000)
+    }, 1000);
 }
+
+// Total moves counter
 
 function totalMoves() {
     moves++;
@@ -153,6 +174,8 @@ function totalMoves() {
     }
 }
 
+// End game including overlay
+
 function endGame() {
     clearInterval(interval);
     totalGameTime = timer.innerHTML;
@@ -160,9 +183,10 @@ function endGame() {
     totalTimeTaken.innerHTML = totalGameTime;
     totalMovesMade.innerHTML = moves;
     matchedCards = [];
-    closeOverlay();
 }
- 
+
+// Restart the game once complete
+
 function playAgain() {
     overlayElement.classList.remove("show-overlay");
     startGame();
@@ -170,7 +194,8 @@ function playAgain() {
 
 window.onload = function () {
     setTimeout(function() {
-        startGame()
-    }, 1200);}
+        startGame();
+    }, 1200);
+};
 
  
