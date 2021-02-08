@@ -141,7 +141,7 @@ Media - I found my images used for the card faces on https://pixabay.com/illustr
 
 I received my initial inspiration for my game on [Youtube](https://www.youtube.com/watch?v=3uuQ3g92oPQ).
 
-I also used the game design found [here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-1-shuffing-cards) this is what my game has been based upon
+I also used the game design found [here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-1-shuffing-cards) this is what my game and my code has been based upon
 
 [Wikipedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) was also used for further information on the Fisher-Yates shuffle
 
